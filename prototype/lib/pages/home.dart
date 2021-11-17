@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
             Align(
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.pages),
+                icon: Icon(Icons.person),
                 alignment: Alignment.topLeft,
               ),
             )
@@ -60,25 +60,26 @@ class Home extends StatelessWidget {
           children: <Widget>[
             IconButton(
               icon: Icon(
-                Icons.menu,
+                Icons.home,
                 color: Colors.white,
               ),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(
-                Icons.search,
+                Icons.switch_account_sharp,
                 color: Colors.white,
               ),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.print, color: Colors.white),
+              icon: Icon(Icons.tour_sharp,
+               color: Colors.white),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(
-                Icons.people,
+                Icons.storefront,
                 color: Colors.white,
               ),
               onPressed: () {},
@@ -91,7 +92,7 @@ class Home extends StatelessWidget {
           backgroundColor: Color.fromRGBO(234, 65, 35, 1),
           child: IconButton(
             icon: Icon(
-              Icons.ac_unit,
+              Icons.swap_horiz,
               color: Colors.white,
             ),
             onPressed: () {},
