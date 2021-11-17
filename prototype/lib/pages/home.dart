@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+// import 'package:flutter_icons/flutter_icons.dart';
 
 void main() {
   runApp(const Home());
@@ -12,7 +12,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.transparent,
+      backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+      appBar: AppBar(backgroundColor: Color.fromRGBO(45, 51, 132, 1),
 
           //   leading:PopupMenuButton(
           //   icon: CircleAvatar(
@@ -30,7 +31,7 @@ class Home extends StatelessWidget {
             Align(
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.person),
+                icon: Icon(Icons.pages),
                 alignment: Alignment.topLeft,
               ),
             )
@@ -48,7 +49,7 @@ class Home extends StatelessWidget {
 
       bottomNavigationBar: BottomAppBar(
         //bottom navigation bar on scaffold
-        color: Colors.transparent,
+        color: Color.fromRGBO(45, 51, 132, 1),
         shape: CircularNotchedRectangle(), //shape of notch
         notchMargin:
             5, //notche margin between floating button and bottom appbar
@@ -72,10 +73,7 @@ class Home extends StatelessWidget {
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(
-                Icons.print,
-                color: Colors.white,
-              ),
+              icon: Icon(Icons.print, color: Colors.white),
               onPressed: () {},
             ),
             IconButton(
@@ -90,8 +88,12 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {},
+          backgroundColor: Color.fromRGBO(234, 65, 35, 1),
           child: IconButton(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(
+              Icons.ac_unit,
+              color: Colors.white,
+            ),
             onPressed: () {},
           )),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
