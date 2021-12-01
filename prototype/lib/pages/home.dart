@@ -46,11 +46,11 @@ class Home extends StatelessWidget {
         Padding(
             padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
             child: Container(
-              child: SvgPicture.asset(
-                'assets/images/crkt.svg',
+              child: Image.asset(
+                'assets/images/crkt.png',
                 // scale: 2.0,
                 width: 800.0,
-                height: 1500,
+                height: 850,
                 // allowDrawingOutsideViewBox: true,
                 fit: BoxFit.cover,
               ),
