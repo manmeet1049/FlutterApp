@@ -44,14 +44,14 @@ class Home extends StatelessWidget {
         //   height: 0,
         // ),
         Padding(
-            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+            padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
             child: Container(
               child: SvgPicture.asset(
-                'assets/images/crkt_fld.svg',
+                'assets/images/crkt.svg',
                 // scale: 2.0,
-                width: 500.0,
-                height: 950,
-                allowDrawingOutsideViewBox: true,
+                width: 800.0,
+                height: 1500,
+                // allowDrawingOutsideViewBox: true,
                 fit: BoxFit.cover,
               ),
             )),
