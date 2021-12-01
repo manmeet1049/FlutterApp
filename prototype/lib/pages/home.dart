@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 // import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const Home());
@@ -36,6 +37,27 @@ class Home extends StatelessWidget {
               ),
             )
           ]),
+
+      body: SingleChildScrollView(
+          child: Column(children: <Widget>[
+        // SizedBox(
+        //   height: 0,
+        // ),
+        Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child: Container(
+              child: SvgPicture.asset(
+                'assets/images/crkt_fld.svg',
+                // scale: 2.0,
+                width: 500.0,
+                height: 950,
+                allowDrawingOutsideViewBox: true,
+                fit: BoxFit.cover,
+              ),
+            )),
+
+        // fit: BoxFit.cover
+      ])),
 
       // IconButton(
       //   icon: const Icon(Icons.navigate_next),
@@ -73,8 +95,7 @@ class Home extends StatelessWidget {
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.tour_sharp,
-               color: Colors.white),
+              icon: Icon(Icons.tour_sharp, color: Colors.white),
               onPressed: () {},
             ),
             IconButton(
